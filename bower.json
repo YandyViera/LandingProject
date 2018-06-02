@@ -1,0 +1,14 @@
+{
+  "name": "myApp",
+  "description": "A landing project",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "bootstrap": "~3.3.5",
+    "owl.carousel": "owl2#^0.1.0",
+    "modernizr": "2.8.3"
+  }
+}
