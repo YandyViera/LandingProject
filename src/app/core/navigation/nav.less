@@ -1,0 +1,88 @@
+.navbar {
+  border: 0;
+  font-size: 16px;
+
+  .navbar-brand {
+    margin: 10px 0px;
+    padding: 15px 15px;
+    font-size: 1.4em;
+    line-height: 22px;
+    font-family: @font-Raleway-Light;
+  }
+}
+
+.navbar-default {
+  background-color: @color-nav-bg;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .navbar-nav > li {
+    a {
+      color: @color-nav-font;
+      margin: 10px 5px;
+      font-size: .875em;
+    }
+
+    .nav-tab-legacy{
+      line-height: 1.49;
+    }
+
+    .external-link {
+      margin: 20px 10px;
+    }
+  }
+
+  .navbar-toggle {
+    &:focus,&:hover{
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-transparent {
+  padding-top: 35px;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+
+  .navbar-toggle {
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+}
+
+.navbar.navbar-fixed-top {
+  transition: all .5s .1s;
+}
+
+.nav-separator {
+  height: @navbar-height;
+  padding-right: 70px;
+  padding-left: 25px;
+}
+
+.nav-separator-bar {
+  border-right: 1px solid rgba(0, 0, 0, .15) !important;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  .VerticalAlign;
+}
+
+.navbar-toggle {
+  margin-top: 19px;
+  margin-bottom: 19px;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-transparent {
+    padding-top: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-transparent .navbar-brand {
+    color: #fff;
+  }
+}

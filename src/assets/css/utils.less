@@ -25,11 +25,25 @@
   -moz-border-radius: @properties;
 }
 
+.VerticalAlign{
+  top: 50%;
+  .TransformAllBrowser(translateY(-50%));
+}
 
-.CenterWithSize(@size) {
+.VerticalAlignWithSize(@size){
+  top: 50%;
+  margin-top: ~'calc(-@{size} / 2 )';
+}
+
+.CenterAlign{
   top: 50%;
   left: 50%;
-  margin-top: ~'calc(-@{size} / 2 )';
+  .TransformAllBrowser(translate(-50%,-50%));
+}
+
+.CenterWithSize(@size) {
+  .VerticalAlignWithSize(@size);
+  left: 50%;
   margin-left: ~'calc(-@{size} / 2 )';
 }
 
@@ -84,4 +98,9 @@
 .text-collapsed {
   .text-wrap;
   white-space: nowrap;
+}
+
+.BoxShadow(@properties){
+  -webkit-box-shadow: @properties;
+  box-shadow: @properties;
 }

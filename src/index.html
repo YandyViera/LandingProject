@@ -24,21 +24,26 @@
     <link rel="stylesheet" href="assets/css/app.css">
 
     <!--     Fonts and icons     -->
-    <!--
-    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    -->
+
+    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/fonts/Eternal%20Fascination.ttf" rel="stylesheet" type='text/css'>
+    <link href="assets/fonts/Raleway-Light.ttf" rel="stylesheet" type='text/css'>
+
+
+
 </head>
 <body>
-<div ng-include="'app/core/navigation/nav.component.html'"></div>
+<navigation></navigation>
+
 
 <div ng-include="'app/core/header/header.component.html'"></div>
-
+<!--
 <div ng-view></div>
 
 <div ng-include="'app/core/footer/footer.component.html'"></div>
-
-
+-->
+<div style="height: 1000px"></div>
 
 <!-- ASSETS -->
 <script src="bower_components/angular/angular.js"></script>
@@ -62,10 +67,17 @@
 <script src="app/app.module.js"></script>
 <!-- / -->
 <!-- CONTROLLERS -->
+<script src="app/shared/components/buttons/submit-button/submit-button.controller.js"></script>
 <!-- / -->
 <!-- SERVICES -->
 <!-- / -->
 <!-- DIRECTIVES -->
+<script src="app/core/navigation/nav.directive.js"></script>
+<script src="app/core/header/header-parallax.directive.js"></script>
+<script src="app/shared/components/external-link/external-link.directive.js"></script>
+<script src="app/shared/components/buttons/submit-button/submit-button.directive.js"></script>
+<script src="app/shared/components/inputs/input.directive.js"></script>
+<script src="app/shared/components/forms/form-inline/form-inline.directive.js"></script>
 <!-- / -->
 </body>
 </html>
