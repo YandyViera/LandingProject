@@ -3,7 +3,7 @@
   font-size: 16px;
 
   .navbar-brand {
-    margin: 10px 0px;
+    margin: 10px 0;
     padding: 15px 15px;
     font-size: 1.4em;
     line-height: 22px;
@@ -16,24 +16,34 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .navbar-nav > li {
-    a {
-      color: @color-nav-font;
+    font-size: .875em;
+
+    .nav-tab-legacy {
+      color: #fff;
       margin: 10px 5px;
-      font-size: .875em;
-    }
-
-    .nav-tab-legacy{
       line-height: 1.49;
+
+      &:hover {
+        color: #fff;
+      }
     }
 
-    .external-link {
-      margin: 20px 10px;
+    .external-link-icon {
+      margin: 5px 0;
     }
   }
 
   .navbar-toggle {
-    &:focus,&:hover{
+    &:focus, &:hover {
       background-color: transparent;
+    }
+  }
+
+  .navbar-brand {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
     }
   }
 }
@@ -48,10 +58,18 @@
       background-color: #fff;
     }
   }
+
+  .navbar-nav > li > .nav-tab-legacy, .navbar-brand {
+    color: @color-nav-font;
+  }
+
+  .nav-separator-bar {
+    border-right: 1px solid rgba(0, 0, 0, .3) !important;
+  }
 }
 
 .navbar.navbar-fixed-top {
-  transition: all .5s .1s;
+  .TransitionForAllBrowser(all .5s .1s);
 }
 
 .nav-separator {
@@ -61,7 +79,7 @@
 }
 
 .nav-separator-bar {
-  border-right: 1px solid rgba(0, 0, 0, .15) !important;
+  border-right: 1px solid rgba(255, 255, 255, .5) !important;
   height: 24px;
   display: inline-block;
   position: relative;

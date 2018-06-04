@@ -8,9 +8,11 @@ angular.module('myApp.shared')
             restrict: 'E',
             replace: true,
             scope: {
-                linkName: '@'
+                linkName: '@',
+                linkText: '@',
+                href: '@'
             },
-            template: '<a class="external-link" href="#"><i class="fa fa-{{linkName}}"></i></a>',
+            template: '<a href="{{href}}" class="external-link"><i class="external-link-icon"><i class="fa fa-{{linkName}}"></i></i>{{linkText}}</a>',
             transclude: false,
             link: function(scope, element, attributes){
 

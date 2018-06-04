@@ -30,6 +30,11 @@
   .TransformAllBrowser(translateY(-50%));
 }
 
+.HorizontalAlign{
+  left: 50%;
+  .TransformAllBrowser(translateX(-50%));
+}
+
 .VerticalAlignWithSize(@size){
   top: 50%;
   margin-top: ~'calc(-@{size} / 2 )';
@@ -103,4 +108,11 @@
 .BoxShadow(@properties){
   -webkit-box-shadow: @properties;
   box-shadow: @properties;
+}
+
+.BorderDottedSpaced(@direction, @color){
+  background-image: linear-gradient(@direction, @color 15%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
 }
