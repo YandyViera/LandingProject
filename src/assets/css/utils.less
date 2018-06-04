@@ -110,9 +110,16 @@
   box-shadow: @properties;
 }
 
-.BorderDottedSpaced(@direction, @color){
-  background-image: linear-gradient(@direction, @color 15%, rgba(255, 255, 255, 0) 0%);
-  background-position: top;
+.BorderDottedSpacedH(@color, @position){
+  background-image: linear-gradient(to right, @color 15%, rgba(255, 255, 255, 0) 0%);
+  background-position: @position;
   background-size: 5px 1px;
   background-repeat: repeat-x;
+}
+
+.BorderDottedSpacedV(@color, @position){
+  background-image: linear-gradient(to bottom, @color 15%, rgba(255, 255, 255, 0) 0%);
+  background-position: @position;
+  background-size: 1px 5px;
+  background-repeat: repeat-y;
 }
