@@ -1,22 +1,31 @@
+//Import Section-----
+@import "components/project-info/project-info";
+@import "components/team-info/team-info";
+//-----
+
+
 .landing-section {
   padding: 90px 0;
   position: relative;
   background-color: #fff;
   text-align: center;
+  color: @color-main;
 
   &.section-small{
     .title-area {
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
   }
 }
 
 .landing-section-gray{
-  background-color: @color-main;
+  background-color: @color-main-alt;
 }
 
 .title-area{
-  margin-bottom: 90px;
+  margin: 0 auto 80px;
+  padding: 0 15px;
+  max-width: 760px;
 }
 
 .title-text{
@@ -27,7 +36,18 @@
 
 .description{
   color: @color-font-gray;
-  margin: 0;
+  margin-bottom: 20px;
+}
+
+.info-wrapper{
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.l-people-img{
+  width: 100%;
+  max-width: 100%;
 }
 
 .button-get-started{
@@ -46,7 +66,11 @@
 .separator{
   position: relative;
   display: inline-block;
-  margin-top: 30px;
+  clear: both;
+}
+
+.lg-separator{
+  margin: 25px 0;
 }
 
 .horizontal-separator{
@@ -65,6 +89,16 @@
   position: absolute;
   margin-top: -8px;
   .BorderDottedSpacedV(#000, right);
+}
+
+.section-sm-cols{
+  .row{
+    margin: 0 -30px;
+  }
+
+  .col-md-3{
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 780px) {
