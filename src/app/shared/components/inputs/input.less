@@ -1,10 +1,8 @@
-.elegancy-input{
-  height: 50px;
+.elegancy-input, .elegancy-textarea{
   color: @color-html-text;
   border-color: @color-gray-soft !important;
   border: solid 2px;
   outline: 0;
-  line-height: 4.5;
   .BorderRadius(2px);
   .BoxShadow(none);
 
@@ -12,4 +10,21 @@
     border-color: @color-gray-dark !important;;
     .BoxShadow(none);
   }
+
+  &:-moz-placeholder
+  ,&:-ms-input-placeholder
+  ,&:-webkit-input-placeholder
+  {
+    color: #b5b3b3;
+  }
+}
+
+.elegancy-input{
+  height: 50px;
+  line-height: 4.5;
+  .text-collapsed;
+}
+
+.elegancy-textarea{
+  resize: none;
 }
