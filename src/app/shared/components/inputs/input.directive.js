@@ -12,7 +12,7 @@ angular.module('myApp.shared')
                 id: '@',
                 placeholder: '@'
             },
-            template:'<input type="{{type}}" class="form-control elegancy-input elegancy-input-dark" id="{{id}}" placeholder="{{placeholder}}">',
+            template:'<input type="{{type}}" class="form-control elegancy-input" id="{{id}}" placeholder="{{placeholder}}">',
             transclude: false
         }
     }]);

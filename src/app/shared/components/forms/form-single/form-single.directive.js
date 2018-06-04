@@ -3,11 +3,11 @@
  */
 'use strict';
 angular.module('myApp.shared')
-    .directive('formInline', [function() {
+    .directive('formSingle', [function() {
         return{
             restrict: 'E',
             replace:true,
-            templateUrl:"app/shared/components/forms/form-inline/form-inline.component.html",
+            templateUrl:"app/shared/components/forms/form-single/form-single.component.html",
             transclude: false
         }
     }]);
